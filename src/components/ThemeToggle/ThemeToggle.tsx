@@ -33,12 +33,13 @@ function ThemeToggle() {
 
     const changeColor = (onlyApply?: boolean) => {
 
-
-
+       
+         
 
         let theme = getColorPreference();
 
-
+        if(!onlyApply)
+            theme = (theme == 'light' ? 'dark' : 'light')
 
         const root = document.documentElement;
 
@@ -47,12 +48,14 @@ function ThemeToggle() {
         let black = getComputedStyle(root).getPropertyValue("--custom-black");
         let blackSecondary = getComputedStyle(root).getPropertyValue("--custom-black-secondary");
 
-        document.documentElement.style.setProperty("--current-bg-color", (theme == 'light' && !onlyApply ? black : white));
-        document.documentElement.style.setProperty("--current-color", (theme == 'light' && !onlyApply ? white : black));
-        document.documentElement.style.setProperty("--current-bg-color-secondary", (theme == 'light' && !onlyApply ? blackSecondary : whiteSecondary));
+        document.documentElement.style.setProperty("--current-bg-color", (theme == 'light' ? white : black));
+        document.documentElement.style.setProperty("--current-color", (theme == 'light' ? black : white));
+        document.documentElement.style.setProperty("--current-bg-color-secondary", (theme == 'light' ? whiteSecondary : blackSecondary));
 
-        document.getElementById("toogle-theme")?.setAttribute("data-theme", (theme == 'light' && !onlyApply ? "dark" : "light"));
-        setPreference(theme == 'light' && !onlyApply ? "dark" : "light");
+        document.getElementById("toogle-theme")?.setAttribute("data-theme", (theme == 'light' ? "light" : "dark"));
+
+
+        setPreference(theme == 'light' ? "light" : "dark");
     }
 
 

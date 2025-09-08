@@ -976,7 +976,7 @@ function Quote() {
 
 
             </section>
-            <Footer></Footer>
+            <Footer disableAnimate={true}></Footer>
         </main >
 
     )
