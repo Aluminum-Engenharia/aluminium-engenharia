@@ -1,0 +1,5 @@
+.logo {
+      float: left; /* faz a imagem "flutuar" à esquerda */
+      margin: 0 15px 12px 0; /* espaço ao redor da imagem */
+      width: 140px; /* só pra controlar o tamanho */
+    }

@@ -1,0 +1,26 @@
+div>.quest{
+    border-top: 1px solid var(--current-bg-color-secondary);
+}
+
+div>.quest:last-child{
+    border-bottom: 1px solid var(--current-bg-color-secondary);
+}
+
+
+
+.quest>p:last-child {
+    overflow: hidden;
+    max-height: 0;
+    /* font-size: 0; */
+    opacity: 0;
+
+    transition: all .3s ease-in-out;
+}
+
+.show-answer {
+
+    max-height: fit-content !important;
+    font-size: 16px !important;
+    opacity: 1 !important;
+
+}

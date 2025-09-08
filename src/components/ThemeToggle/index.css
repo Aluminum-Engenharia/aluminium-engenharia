@@ -1,0 +1,60 @@
+.moon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    z-index: 1000;
+    /* color: var(--current-bg-color); */
+}
+
+
+.sun {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-right: 4px;
+    font-size: 14px;
+    z-index: 1000;
+    /* color: var(--current-bg-color); */
+
+}
+
+
+button[data-theme="dark"]>span {
+    transform: translateX(19px);
+    background-color: var(--custom-black);
+}
+
+
+button[data-theme="light"]>span {
+
+    background-color: white;
+}
+
+button[data-theme="light"]>.sun {
+    color: var(--current-color);
+}
+
+
+
+
+#toogle-theme {
+    background-color: var(--custom-black-secondary);
+    position: relative;
+}
+
+#toogle-theme>span {
+    position: absolute;
+
+    padding: 9px;
+    border-radius: 100%;
+    transition: all .8s;
+}

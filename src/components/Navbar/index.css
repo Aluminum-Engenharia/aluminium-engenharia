@@ -1,0 +1,49 @@
+.menu-container {
+    position: relative;
+}
+
+/* Botão hamburguer */
+.hamburger {
+    font-size: 20px;
+    color: var(--custom-white);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+/* Menu escondido */
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: var(--custom-black);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+ 
+    top: 100%;
+    right: 50%;
+    border-radius: 5px;
+
+}
+
+
+/* Links do menu */
+.menu a {
+    padding: 6px;
+    text-decoration: none;
+    color: var(--custom-white);
+
+}
+
+.menu>a:not(:first-child) {
+    border-top: 1px solid var(--custom-black-secondary);
+}
+
+.menu.show {
+    max-height: fit-content;
+    border: 1px solid var(--custom-black-secondary);
+    /* altura suficiente para mostrar os links */
+}

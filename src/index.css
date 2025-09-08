@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+:root {
+  padding: 0;
+  margin: 0;
+  --custom-white: white;
+  --custom-white-secondary: #ebebeb;
+  --custom-black: rgb(32, 32, 32);
+  --custom-black-secondary: #3b3b3b;
+  --current-bg-color: var(--custom-black);
+  --current-bg-color-secondary: var(--custom-black-secondary);
+  --current-color: var(--custom-white);
+  --navbar-visibility: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: var(--navbar-visibility);
+}
+
+::selection {
+  background: var(--current-color);
+  color: var(--current-bg-color);
+  ;
+}
+
+/* largura da barra */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* trilho (fundo da barra) */
+::-webkit-scrollbar-track {
+
+  background: var(--current-bg-color-secondary);
+  border-radius: 10px;
+}
+
+/* parte que se move (thumb) */
+::-webkit-scrollbar-thumb {
+  background: var(--current-color);
+  border-radius: 10px;
+}
+
+/* cor quando passa o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--current-bg-color);
+
+}
+
+
+.animate-up {
+  transform: translateY(120px);
+  transition: all 2s ease-in-out !important;
+}
+
+.animate-up.go {
+  transform: translateY(0);
+}
+
+.animate-left {
+  transform: translateX(120px);
+  transition: all 2s ease-in-out !important;
+}
+
+.animate-left.go {
+  transform: translateX(0);
+}
+
+
+.animate-right {
+  transform: translateX(-120px);
+  transition: all 2s ease-in-out !important;
+}
+
+.animate-right.go {
+  transform: translateX(0);
+}
+
+
+.animate-show {
+  opacity: 0;
+  transition: all 2s ease-in-out !important;
+}
+
+.animate-show.go {
+  opacity: 1;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    color: var(--custom-black);
+    background-color: var(--custom-white);
+    --current-bg-color: var(--custom-black);
+
+  }
+} */
+
+/* @media (prefers-color-scheme: light) {
+  :root {
+    color: var(--custom-black);
+    background-color: var(--custom-white);
+    --current-bg-color: var(--custom-white);
+  } */
+
+/* 
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  } */
+/* } */
