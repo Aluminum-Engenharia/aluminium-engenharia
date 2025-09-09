@@ -31,8 +31,6 @@ interface Quote {
     message?: string | null;
 }
 
-
-
 function Quote() {
 
     const [firstLoad, setFirstLoad] = useState(false);
