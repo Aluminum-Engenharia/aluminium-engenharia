@@ -34,7 +34,7 @@ function NavBar({ isNotHome }: Prop) {
                     <a href="/#contact" className="hover:border-[var(--custom-white)] border-b-2  border-transparent cursor-pointer px-2 py-1">Contato</a>
                 </nav>
                 <div className="flex items-center justify-between space-x-4">
-                    <Link to="/quote" className="md:block lg:block hidden cursor-pointer border-2 border-[var(--custom-white)] text-[var(--custom-white)] font-semibold hover:bg-[var(--custom-white)] hover:text-[var(--custom-black)] rounded-md px-2 ">Solicitar orçamento</Link>
+                    <Link to="/quote" className="md:hidden lg:block hidden cursor-pointer border-2 border-[var(--custom-white)] text-[var(--custom-white)] font-semibold hover:bg-[var(--custom-white)] hover:text-[var(--custom-black)] rounded-md px-2 ">Solicitar orçamento</Link>
                     <ThemeToggle></ThemeToggle>
                     <div className="menu-container block  md:hidden lg:hidden">
                         <button className="hamburger" onClick={handleMenu}>
