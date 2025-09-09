@@ -22,7 +22,6 @@ interface Service {
     quantity?: number;
 }
 
-
 interface Quote {
     step: number;
     services: Service[];
