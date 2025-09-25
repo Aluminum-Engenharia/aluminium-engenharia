@@ -17,7 +17,7 @@ function Footer({ disableAnimate }: Prop) {
                         <h1 className={(disableAnimate ? '' : 'animate animate-show ') + ` text-left lg:text-3xl md:text-3xl text-2xl font-semibold italic`}>Entre em contato</h1>
 
                         <div className="space-y-4">
-                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1`} href="https://api.whatsapp.com/send?phone=5541992821468" target="_blank">
+                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1`} href="https://w.app/aluminiumengenharia" target="_blank">
                                 <CustomIcon icon="Whatsapp" className=" w-[2em] "></CustomIcon>
                                 <p className="pl-2" >
                                     (41) 99282-1468</p>
@@ -26,7 +26,7 @@ function Footer({ disableAnimate }: Prop) {
                                 <CustomIcon icon="Instagram" className="w-[2.2em]"></CustomIcon>
                                 <p className="pl-1.5">aluminiumengenharia</p>
                             </a>
-                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1" href="mailto:contato@aluminumengengaria.com.br`} target="_blank">
+                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1" href="mailto:contato@aluminumengenharia.com.br`} target="_blank">
                                 <CustomIcon icon="Email" className="w-[2em] "></CustomIcon>
                                 <p className="pl-2">contato@aluminiumengengaria.com.br</p>
                             </a>
