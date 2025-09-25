@@ -26,7 +26,7 @@ function Footer({ disableAnimate }: Prop) {
                                 <CustomIcon icon="Instagram" className="w-[2.2em]"></CustomIcon>
                                 <p className="pl-1.5">aluminiumengenharia</p>
                             </a>
-                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1" href="mailto:contato@aluminiumengenharia.com.br`} target="_blank">
+                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1`} href="mailto:contato@aluminiumengenharia.com.br" target="_blank">
                                 <CustomIcon icon="Email" className="w-[2em] "></CustomIcon>
                                 <p className="pl-2">contato@aluminiumengenharia.com.br</p>
                             </a>
