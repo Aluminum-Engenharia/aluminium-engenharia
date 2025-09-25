@@ -17,7 +17,7 @@ function Footer({ disableAnimate }: Prop) {
                         <h1 className={(disableAnimate ? '' : 'animate animate-show ') + ` text-left lg:text-3xl md:text-3xl text-2xl font-semibold italic`}>Entre em contato</h1>
 
                         <div className="space-y-4">
-                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1`} href="https://w.app/aluminiumengenharia" target="_blank">
+                            <a className={(disableAnimate ? '' : 'animate animate-show ') + ` flex items-center pl-1`} href="https://api.whatsapp.com/send?phone=555541992821468&text=Olá,%20gostaria%20de%20fazer%20um%20orçamento" target="_blank">
                                 <CustomIcon icon="Whatsapp" className=" w-[2em] "></CustomIcon>
                                 <p className="pl-2" >
                                     (41) 99282-1468</p>
