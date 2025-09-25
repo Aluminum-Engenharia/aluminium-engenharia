@@ -5,14 +5,14 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 function Video() {
 
     return (
-        <div className="w-full lg:h-screen md:h-screen h-[25vh]  flex items-center justify-center">
+        <div className="w-full lg:h-screen md:h-screen h-[100vh]  flex items-center justify-center">
             <video
                 src="/ufo.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="absolute top-0 left-0 w-full lg:h-screen md:h-screen h-[25vh] object-cover "
+                className="absolute top-0 left-0 w-full lg:h-screen md:h-screen h-[100vh] object-cover "
             />
             <div className="relative z-10  p-8 flex flex-col items-center justify-center">
                 <h1 className="lg:text-7xl md:text-7xl text-2xl font-bold text-center text-[var(--custom-white)]
