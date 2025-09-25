@@ -53,7 +53,7 @@ function App() {
       <Route path="/quote" element={<Quote />} />
       {/* <Route path="/contact" element={<Contact />} /> */}
        {/* rota "coringa" para qualquer caminho não encontrado */}
-      <Route path="*" element={<Navigate to="/" />} />
+      {/* <Route path="*" element={<Navigate to="/" />} /> */}
     </Routes>
 
   )
