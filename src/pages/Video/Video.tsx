@@ -13,6 +13,7 @@ function Video() {
                 muted
                 playsInline
                 preload="auto"
+                poster="/poster.png"
                 className="absolute top-0 left-0 w-full lg:h-screen md:h-screen h-[100vh] object-cover "
             >
                 <source src="/ufo.mp4" type="video/mp4" />
