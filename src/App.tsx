@@ -10,14 +10,15 @@ function App() {
       || window.innerWidth <= 768
       || window.matchMedia("(max-width: 768px)").matches;
 
-    if (isMobile) {
-      document.documentElement.style.setProperty("--navbar-visibility", "flex");
-    }
+    // if (isMobile) {
+    //   document.documentElement.style.setProperty("--navbar-visibility", "flex");
+    // }
 
     const onScroll = () => {
-      if (isMobile) return;
+      // if (isMobile) return;
 
       if (window.scrollY > (window.screen.height - 140)) {
+        console.log("scrollY", window.scrollY);
         document.documentElement.style.setProperty("--navbar-visibility", "flex");
       } else {
         document.documentElement.style.setProperty("--navbar-visibility", "none");
@@ -52,7 +53,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/quote" element={<Quote />} />
       {/* <Route path="/contact" element={<Contact />} /> */}
-       {/* rota "coringa" para qualquer caminho não encontrado */}
+      {/* rota "coringa" para qualquer caminho não encontrado */}
       {/* <Route path="*" element={<Navigate to="/" />} /> */}
     </Routes>
 
